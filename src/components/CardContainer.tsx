@@ -94,7 +94,7 @@ export const CardConainer = () => {
                                 )
                             })}</div></>}
                     </div>}
-                    <Button onClick={showMoreCards} text={'Показать еще'}></Button>
+                    <Button onClick={showMoreCards} text={'Показать еще'} isDisabled={cards.length == 12 ? true : false}></Button>
                 </div>
 
             </div>
@@ -111,7 +111,7 @@ export const CardConainer = () => {
                         }
                     </div>
                 </div>
-                <Button onClick={showMoreSupportCards} text={'Показать еще'}></Button>
+                <Button isDisabled={cardsSupport.length == 12 ? true : false} onClick={showMoreSupportCards} text={'Показать еще'}></Button>
             </div>
         </>
     )

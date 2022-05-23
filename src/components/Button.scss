@@ -14,11 +14,7 @@
     border: none;
     cursor: pointer;
 }
-.show-more:hover {
-    -webkit-box-shadow: -1px 3px 8px 16px rgba(34, 60, 80, 0.33) inset;
-    -moz-box-shadow: -1px 3px 8px 16px rgba(80, 170, 164, 0.33) inset;
-    box-shadow: -1px 3px 8px 16px rgba(80, 170, 164, 0.33) inset;
-}
+
 @media (max-width: 1024px) {
     .show-more {
         font-weight: 400;
@@ -34,4 +30,10 @@
         line-height: 35px;
         border-radius: 23px;
     }
+}
+.disabled-button{
+    background-color: gray;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    box-shadow: none;
 }
