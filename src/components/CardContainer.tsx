@@ -1,14 +1,12 @@
-import { useEffect, useState } from 'react';
 import { useMediaPredicate } from "react-media-hook";
 import { balances } from '../cardData/CardData';
 import '../components/CardContainer.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { CardBalance } from './CardBalance';
 import '../styles/_commonStyles.scss'
-import { AppState, store } from '../redux/store';
+import { AppState } from '../redux/store';
 import { CardsState } from '../redux/reducer/CardPageReducer';
 import { showMoreCardsActionCreator, showMoreCardsSupportActionCreator } from '../redux/action/CardPageActions';
-import { rerenderEntireTree } from '..';
 import { CardSupport } from './CardSupport';
 import { Button } from './Button';
 export const CardConainer = () => {
@@ -94,7 +92,7 @@ export const CardConainer = () => {
                                 )
                             })}</div></>}
                     </div>}
-                    <Button onClick={showMoreCards} text={'Показать еще'} isDisabled={cards.length == 12 ? true : false}></Button>
+                    <Button onClick={showMoreCards} text={'Показать еще'} isDisabled={cards.length === 12 ? true : false}></Button>
                 </div>
 
             </div>
@@ -111,7 +109,7 @@ export const CardConainer = () => {
                         }
                     </div>
                 </div>
-                <Button isDisabled={cardsSupport.length == 12 ? true : false} onClick={showMoreSupportCards} text={'Показать еще'}></Button>
+                <Button isDisabled={cardsSupport.length === 12 ? true : false} onClick={showMoreSupportCards} text={'Показать еще'}></Button>
             </div>
         </>
     )
