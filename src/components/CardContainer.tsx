@@ -57,7 +57,7 @@ export const CardConainer = () => {
                                     <CardBalance data={el} />
                                 )
                             })}</div>
-                                <div className='flex-block'>{cut()[0].map((el) => {
+                                <div className='flex-block'>{cut()[1].map((el) => {
                                     return (
                                         <CardBalance data={el} />
                                     )
