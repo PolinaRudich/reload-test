@@ -1,0 +1,61 @@
+@import "../styles//colors";
+.card-container {
+    min-width: 15.06%;
+    background-color: $white;
+    margin-bottom: 18px;
+    padding-top: 18px;
+    padding-bottom: 19px;
+    .data-wrapper {
+        border-left: 3px solid $blue;
+        height: 66px;
+        .card-title {
+            margin-left: 8px;
+            margin-bottom: 7px;
+        }
+    }
+    .card-info {
+        margin-left: 8px;
+        display: flex;
+        height: 39px;
+        align-items: flex-end;
+        .inwork-number {
+            font-weight: 500;
+            font-size: 42px;
+            line-height: 17px;
+            align-self: center;
+        }
+        .burning_count {
+            color: $red;
+            text-align: center;
+        }
+        .fire-box {
+            margin-left: 4px;
+        }
+        .time-block {
+            margin-left: 16px;
+            justify-self: flex-end;
+        }
+        .colored-bar {
+            width: 74px;
+            border-radius: 16px;
+            height: 11px;
+            background-color: #efefef;
+            .colored-bar-fill {
+                width: 31px;
+                border-radius: 16px;
+                height: 11px;
+                background-color: $blue;
+                z-index: 2;
+            }
+            .red-warning{
+                background-color: $red;
+            }
+        }
+        .time-tracker {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 20px;
+            color: #909090;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@import "../styles//colors";
+.card-container {
+    min-width: 15.06%;
+    background-color: $white;
+    padding: 24px 0px 24px 13px;
+    .sum {
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 33px;
+        color: $blue;
+    }
+    .red-flag {
+        color: $red;
+    }
+    .sum-plan {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 17px;
+        color: $gray;
+    }
+}
+@media (max-width: 1024px) {
+    .card-container {
+        margin-bottom: 18px;
+    }
+}
+@media(max-width: 360px) {
+    .card-container {
+        margin-bottom: 24px;
+        padding: 35px 0px 35px 20px;
+    }
+}

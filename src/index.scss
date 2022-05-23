@@ -1,0 +1,13 @@
+  @import '../src/styles/colors';
+  body {
+    margin: 0;
+    background-color:$background;
+    box-sizing: border-box;
+    font-family: 'Cera Pro';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
